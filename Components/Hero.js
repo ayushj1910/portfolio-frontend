@@ -1,15 +1,10 @@
-const Landingpage = () => {
+const Hero = () => {
   return (
     <div className="mt-[52px] h-[95vh]">
       <div
         id="hero"
-        className="text-center text-slate-50 h-full bg-[url('/wave.png')] bg-no-repeat bg-center bg-cover"
+        className="text-center text-stone-900 h-full bg-[url('/wave4.svg')] bg-no-repeat bg-center bg-cover"
       >
-        <p>page</p>
-        <p>page</p>
-        <p>page</p>
-        <p>page</p>
-        <p>page</p>
         <p>page</p>
         <p>page</p>
         <p>page</p>
@@ -28,4 +23,4 @@ const Landingpage = () => {
   );
 };
 
-export default Landingpage;
+export default Hero;

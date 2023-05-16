@@ -1,13 +1,16 @@
-import Landingpage from "../Components/Landingpage";
+import { About } from "@/Components/About";
+import Hero from "../Components/Hero";
 import { Navbar } from "@/Components/Navbar";
 
 
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
-      <Landingpage />
-      <Landingpage />
+      <Hero />
+      <About/>
+      {/* <Hero /> */}
+      
+
     </>
   );
 }
