@@ -16,6 +16,7 @@ export const Navbar = () => {
             {navinfo.desktopNavLinks.map((navlink) => {
               return (
                 <Link
+                    
                   key={navlink.link}
                   href={navlink.link}
                   className="mr-5 hover:text-gray-900 cursor-pointer"
