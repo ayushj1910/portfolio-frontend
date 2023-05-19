@@ -1,8 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { navinfo } from "@/data/navinfo";
 
 export const Navbar = () => {
+  const handleScroll = (e) => {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+    elem?.scroll;
+  };
   return (
     <>
       {/* Desktop navbar starts here */}
@@ -16,10 +28,10 @@ export const Navbar = () => {
             {navinfo.desktopNavLinks.map((navlink) => {
               return (
                 <Link
-                    
                   key={navlink.link}
                   href={navlink.link}
-                  className="mr-5 hover:text-gray-900 cursor-pointer"
+                  onClick={handleScroll}
+                  className="mr-5 hover:text-gray-300 cursor-pointer"
                 >
                   {navlink.name}
                 </Link>
@@ -42,6 +54,7 @@ export const Navbar = () => {
               <Link
                 key={navlink.alt}
                 href={navlink.link}
+                onClick={handleScroll}
                 className="p-5 cursor-pointer decoration-transparent"
               >
                 <Image
@@ -58,8 +71,6 @@ export const Navbar = () => {
       </nav>
 
       {/* Mobile navbar ends here */}
-
     </>
   );
 };
-
