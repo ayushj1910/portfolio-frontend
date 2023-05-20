@@ -7,11 +7,11 @@ export async function About(props) {
       <div id="about" className="sm:pt-[40px] pb-4 md:pt-1 h-auto bg-zinc-700 ">
         <Techstack />
         <div className="flex md:mx-10 flex-wrap  bg-[url('/aboutbg.svg')] bg-fixed shadow-[-6px_13px_12px_0px_rgba(0,0,0,0.75)] sm:flex-row flex-col p-2 m-3 my-10 text-center rounded-md">
-          <div className="bg-red p-2 sm:w-1/2">
-            <div className="flex justify-center  rounded-[50%] h-[400] text-center">
+          <div className=" bg-red p-2 my-auto sm:w-1/2">
+            <div className="flex justify-center rounded-[50%] h-[400] text-center">
               <img
-                className="rounded-[50%] h-[300px] w-[300px] shadow-[-6px_13px_12px_0px_rgba(0,0,0,0.75)]"
-                src="/memo.gif"
+                className="rounded-[50%] my-auto h-[300px] w-[300px] shadow-[-6px_13px_12px_0px_rgba(0,0,0,0.75)]"
+                src="/memoji4.gif"
                 alt="memoji"
                 width={400}
                 height={400}
