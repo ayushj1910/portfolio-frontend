@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next {
+  @apply text-indigo-500;
+}
+.swiper-button-prev {
+  @apply text-indigo-500;
+}
+
+#projects .swiper-pagination-bullet {
+  @apply text-indigo-500;
+}
