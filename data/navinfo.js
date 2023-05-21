@@ -13,7 +13,7 @@ export const navinfo = {
       link: "#projects",
     },
     {
-      name: "Blogs",
+      name: "Blogs/Resources",
       link: "#blogs",
     },
     {

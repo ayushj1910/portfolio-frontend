@@ -18,8 +18,8 @@ export const Navbar = () => {
   return (
     <>
       {/* Desktop navbar starts here */}
-
-      <header className="fixed top-0 z-30 w-full text-stone-50 bg-slate-800">
+      {/* bg-slate-800 */}
+      <header className="fixed top-0 z-30 w-full text-stone-50  bg-indigo-900 shadow-3d">
         <div className="mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center md:mb-0 cursor-pointer">
             <span className="ml-3 text-xl">Ayush // Portfolio</span>

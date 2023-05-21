@@ -15,11 +15,13 @@ export default async function Techstack(props) {
   const skills = await getData();
   return (
     <div className="mx-1 lg:pt-8 text-white text-center">
-      <p className="inline sm:pb-0 pb-3 sm:pr-3  text-2xl">Tech Stack</p>
+      <p className="inline sm:pb-0 pb-3 sm:pr-3  text-2xl text-indigo-500">
+        Tech Stack
+      </p>
       <div className="flex flex-wrap gap-7 justify-center mt-[20px]">
         {skills.data.map((item) => {
           return (
-            <div className="flex justify-center lg:justify-start bg-[#fff] p-2 rounded-[50%]   shadow-[-6px_13px_12px_0px_rgba(0,0,0,0.75)] cursor-pointer">
+            <div className="flex justify-center bg-[#fff] p-2 rounded-[50%]   shadow-3d cursor-pointer">
               <img
                 src={api_url + item.attributes.skill.data.attributes.url}
                 title={item.attributes.alt}

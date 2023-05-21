@@ -1,6 +1,7 @@
 import { About } from "@/app/Components/About";
 import { Hero } from "./Components/Hero";
 import { Projects } from "./Components/Projects";
+import Blogs from "./Components/Blogs";
 // import { use } from "react";
 // import axios, { Axios } from "axios";
 
@@ -17,6 +18,7 @@ export default async function Home() {
       <Hero />
       <About />
       <Projects />
+      <Blogs />
     </>
   );
 }

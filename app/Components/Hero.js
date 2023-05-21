@@ -35,16 +35,16 @@ export const Hero = () => {
                 </button>
               </div>
             </div>
-            <div className="p-6 text-center">
+            <div className="p-6 text-center ">
               <img
-                className="flex object-cover sm:mt-0 h-[250px] md:h-full object-center rounded-[500px] "
+                className="flex object-cover sm:mt-0 h-[250px] md:h-full object-center rounded-[500px] shadow-3d"
                 alt="hero"
                 src="/memoji.svg"
               />
             </div>
           </div>
         </section>
-        <div className=" h-[80px] sm:h-[300px] w-[100%] ">
+        <div className=" h-[80px] sm:h-[300px] w-[100%] marker">
           <div className=" bg-[url('/waves2.svg')] bg-center bg-cover bg-no-repeat bottom-0 w-[100%] h-[100%] "></div>
         </div>
       </div>
