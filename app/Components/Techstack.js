@@ -1,6 +1,6 @@
 const api_url = "http://localhost:1337";
 
-async function getData() {
+async function getSkillsData() {
   const res = await fetch("http://localhost:1337/api/skills?populate=*", {
     cache: "no-store",
   });
@@ -12,7 +12,7 @@ async function getData() {
 }
 
 export default async function Techstack(props) {
-  const skills = await getData();
+  const skills = await getSkillsData();
   return (
     <div className="mx-1 lg:pt-8 text-white text-center">
       <p className="inline sm:pb-0 pb-3 sm:pr-3  text-2xl text-indigo-500">
