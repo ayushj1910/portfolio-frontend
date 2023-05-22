@@ -1,5 +1,7 @@
 "use client";
+BsBoxArrowUpRight;
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 // Import Swiper styles
 import "swiper/css";
@@ -10,25 +12,19 @@ import "../globals.css";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
+import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
+
 export const Projects = () => {
   return (
     <div id="projects" className="h-auto bg-zinc-700">
       <h1 className="mx-auto w-[50%] border-b-2 uppercase text-indigo-500 text-center text-3xl pt-14 pb-4 tracking-[0.25rem]">
         Projects
       </h1>
-      <style jsx>
-        {`
-          .swiper-button-next {
-            color: yellow;
-          }
-        `}
-      </style>
       <Swiper
         navigation={true}
         pagination={{ clickable: true }}
         modules={[Pagination, Navigation]}
         scrollbar={{ draggable: true }}
-        loop={true}
         className="mySwiper h-[100%] w-[100%]"
       >
         <SwiperSlide>
@@ -36,23 +32,41 @@ export const Projects = () => {
             <div className="container px-3 py-12 mx-auto">
               <div className="flex justify-center flex-wrap m-2">
                 <div className="p-4 mx-[8px]">
-                  <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <img
-                      className="lg:h-72 h- md:h-64 w-full object-cover object-center"
-                      src="https://dummyimage.com/720x400"
+                  <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-3d">
+                    <Image
+                      className="md:h-72 w-full object-fill object-center"
+                      height={600}
+                      width={700}
+                      src="/cricknews.png"
                       alt="blog"
                     />
-                    <div className="p-6">
-                      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    <div className="p-6 bg-[url('/aboutbg.svg')] bg-fixed">
+                      <h1 className="title-font text-lg font-medium text-white mb-3">
                         The Catalyzer
                       </h1>
-                      <p className="leading-relaxed mb-3">
+                      <p className="leading-relaxed text-slate-300 mb-3">
                         Photo booth fam kinfolk cold-pressed sriracha leggings
                         jianbing microdosing tousled waistcoat.
                       </p>
                       <div className="flex items-center flex-wrap ">
-                        <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
-                          Learn More
+                        <a
+                          href=""
+                          className="text-white bg-black inline-flex border-2 p-2 items-center rounded-md shadow-3d"
+                        >
+                          Demo
+                          <span className="ml-2 mb-[2px] p-1">
+                            <BsBoxArrowUpRight />
+                          </span>
+                        </a>
+                        <a
+                          href="https://swiperjs.com/element"
+                          target="_blank"
+                          className="text-white  bg-black ml-2 border-2 p-2 inline-flex items-center rounded-md shadow-3d"
+                        >
+                          Github
+                          <span className="ml-2 p-1">
+                            <BsGithub />
+                          </span>
                         </a>
                       </div>
                     </div>
