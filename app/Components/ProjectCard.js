@@ -23,7 +23,7 @@ export default function ProjectCard(props) {
             <section className="text-gray-600 body-font">
               <div className="container px-3 pb-12 mx-auto">
                 <div className="flex justify-center flex-wrap m-2">
-                  <div className="p-4 mx-[8px]  lg:w-[50%]">
+                  <div className="p-4 mx-[8px] mt-6 lg:w-[50%]">
                     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-3d">
                       <img
                         className="md:h-72 w-full object-fill object-center"
@@ -35,7 +35,8 @@ export default function ProjectCard(props) {
                         }
                         alt={item.attributes.Name}
                       />
-                      <div className="p-6 bg-[url('/aboutbg.svg')] bg-fixed">
+                      {/* bg-[url('/aboutbg.svg')]  */}
+                      <div className="p-6 bg-[#1C1C1C] bg-opacity-75 bg-fixed">
                         <h1 className="title-font text-lg font-medium text-white mb-3">
                           {item.attributes.Name}
                         </h1>

@@ -28,7 +28,7 @@ export const Hero = () => {
               </p>
               <Socials color={"text-slate-950"} />
               <div className="mb-[20px]">
-                <button className="inline-flex  text-white shadow-slate-700 shadow-lg bg-slate-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-900 rounded text-lg">
+                <button className="inline-flex  text-white shadow-slate-700 shadow-lg bg-indigo-700 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-900 rounded text-lg">
                   <a href="/memoji.svg" download>
                     Download CV
                   </a>
