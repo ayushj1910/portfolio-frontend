@@ -30,7 +30,7 @@ export const Socials = (props) => {
       {socialIcons.map((socials) => {
         return (
           <span key={socials.link} className={"text-3xl pr-2 " + props.color}>
-            <Link className="mr-1" href={socials.link}>
+            <Link className="mr-1 text-white" href={socials.link}>
               {socials.iconName}
             </Link>
           </span>

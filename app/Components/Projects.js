@@ -12,7 +12,7 @@ async function getProjectsData() {
 }
 export default async function Projects() {
   const projects = await getProjectsData();
-  console.log(projects);
+
   return (
     <div id="projects" className="h-auto bg-[#0F172A]">
       <h1 className="mx-auto w-[50%] border-b-2 uppercase text-indigo-500 text-center text-3xl pt-14 pb-4 tracking-[0.25rem]">
