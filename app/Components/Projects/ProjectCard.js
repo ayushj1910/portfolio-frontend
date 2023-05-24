@@ -7,7 +7,7 @@ import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../globals.css";
+import "../../globals.css";
 
 export default function ProjectCard(props) {
   return (

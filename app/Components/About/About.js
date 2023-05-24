@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Techstack from "./Techstack";
+import Techstack from "./Techstack.js";
 
 export async function About(props) {
   return (

@@ -47,7 +47,7 @@ export const Navbar = () => {
 
       {/* Mobile navbar starts here */}
 
-      <nav className="fixed md:hidden bottom-0 left-0 right-0 z-20 px-4 bg-slate-800 sm:px-8">
+      <nav className="fixed md:hidden bottom-0 left-0 right-0 z-20 px-4 bg-indigo-900 sm:px-8">
         <div className="flex w-full justify-between items-center text-stone-50">
           {navinfo.mobileNavLinks.map((navlink) => {
             return (

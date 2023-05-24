@@ -1,7 +1,21 @@
 import Image from "next/image";
-import { Socials } from "./Socials.js";
+import { Socials } from "../Socials.js";
 
-export const Hero = () => {
+async function getResume() {
+  const res = await fetch("http://localhost:1337/api/resumes?populate=*", {
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+export const Hero = async () => {
+  const api_url = "http://localhost:1337";
+  const resume = await getResume();
+
   return (
     <div className=" mt-[52px] h-auto w-full ">
       <div
@@ -31,7 +45,14 @@ export const Hero = () => {
               <Socials color={"text-slate-950"} />
               <div className="mb-[20px]">
                 <button className="inline-flex  text-white shadow-slate-700 shadow-md border-0 py-2 px-3 focus:outline-none bg-indigo-900 rounded text-lg">
-                  <a href="/memoji.svg" download>
+                  <a
+                    href={
+                      api_url +
+                      resume.data[0].attributes.cvlink.data.attributes.url
+                    }
+                    target="_blank"
+                    download
+                  >
                     Download CV
                   </a>
                 </button>
