@@ -35,7 +35,7 @@ export default function ProjectCard(props) {
                         }
                         alt={item.attributes.Name}
                       />
-                      {/* bg-[url('/aboutbg.svg')]  */}
+
                       <div className="p-6 bg-[#1C1C1C] bg-opacity-75 bg-fixed">
                         <h1 className="title-font text-lg font-medium text-white mb-3">
                           {item.attributes.Name}

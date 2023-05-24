@@ -20,9 +20,6 @@ export const Hero = async () => {
     <div className=" mt-[52px] h-auto w-full ">
       <div
         id="hero"
-        // sm:bg-[url('/wave4.svg')]
-        // bg-[#EAEAEA]
-        // bg-[#151418]
         className=" text-stone-900 h-auto bg-[#151418] bg-opacity-1 w-full bg-no-repeat bg-center bg-cover"
       >
         <section className="container mx-auto  text-gray-600 body-font h-auto">
