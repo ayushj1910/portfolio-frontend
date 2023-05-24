@@ -26,7 +26,7 @@ const socialIcons = [
 
 export const Socials = (props) => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-start">
       {socialIcons.map((socials) => {
         return (
           <span key={socials.link} className={"text-3xl pr-2 " + props.color}>

@@ -35,7 +35,7 @@ export const Blogs = async () => {
         Blogs
       </h1>
       <BlogCard blogs={blogs} />
-      <div className=" text-center bg-red m-8 mt-[70px] text-white">
+      <div className=" text-center bg-red m-8 mb-0 pb-8 mt-[70px] text-white">
         <a
           href="https://ayushj.hashnode.dev/"
           target="_blank"
@@ -44,9 +44,7 @@ export const Blogs = async () => {
           Checkout all Blogs
         </a>
       </div>
-      <h1 className="mx-auto w-[50%] border-b-2 uppercase text-indigo-500 text-center text-3xl pt-14 pb-4 tracking-[0.25rem]">
-        Resources
-      </h1>
+      {/* <Resouces /> */}
     </div>
   );
 };
