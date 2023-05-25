@@ -41,6 +41,7 @@ export default function ProjectCard(props) {
                         </p>
                         <div className="flex items-center flex-wrap ">
                           <a
+                            target="_blank"
                             href={item.attributes.Demo}
                             className="text-white bg-black inline-flex border-2 p-2 items-center rounded-md shadow-3d"
                           >
