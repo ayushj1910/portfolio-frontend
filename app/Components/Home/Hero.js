@@ -1,21 +1,7 @@
 import Image from "next/image";
 import { Socials } from "../Socials.js";
 
-async function getResume() {
-  const res = await fetch("http://localhost:1337/api/resumes?populate=*", {
-    cache: "no-store",
-  });
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-}
-
 export const Hero = async () => {
-  const api_url = "http://localhost:1337";
-  const resume = await getResume();
-
   return (
     <div className=" mt-[52px] h-auto w-full ">
       <div
@@ -43,10 +29,7 @@ export const Hero = async () => {
               <div className="mb-[20px]">
                 <button className="inline-flex  text-white shadow-slate-700 shadow-md border-0 py-2 px-3 focus:outline-none bg-indigo-900 rounded text-lg">
                   <a
-                    href={
-                      api_url +
-                      resume.data[0].attributes.cvlink.data.attributes.url
-                    }
+                    href="https://azure-wilow-35.tiiny.site/"
                     target="_blank"
                     download
                   >

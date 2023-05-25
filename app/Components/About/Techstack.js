@@ -1,7 +1,6 @@
-const api_url = "http://localhost:1337";
-
 async function getSkillsData() {
-  const res = await fetch("http://localhost:1337/api/skills?populate=*", {
+  // const dblink = process.env.DB_LINK;
+  const res = await fetch(`${process.env.DB_LINK}/api/skills?populate=*`, {
     cache: "no-store",
   });
   if (!res.ok) {
@@ -23,7 +22,7 @@ export default async function Techstack(props) {
           return (
             <div className="flex justify-center bg-[#fff] p-2 rounded-[50%]   shadow-3d cursor-pointer">
               <img
-                src={api_url + item.attributes.skill.data.attributes.url}
+                src={item.attributes.skill.data.attributes.url}
                 title={item.attributes.alt}
                 alt={item.attributes.alt}
                 width={40}
