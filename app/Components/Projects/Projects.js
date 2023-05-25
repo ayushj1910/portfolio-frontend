@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 
 async function getProjectsData() {
-  const res = await fetch("http://localhost:1337/api/projects?populate=*", {
+  const res = await fetch(`${process.env.DB_LINK}/api/projects?populate=*`, {
     cache: "no-store",
   });
   if (!res.ok) {

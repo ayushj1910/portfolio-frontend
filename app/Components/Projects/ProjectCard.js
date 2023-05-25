@@ -1,6 +1,5 @@
 "use client";
 
-const api_url = "http://localhost:1337";
 import { Pagination, Navigation, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
@@ -29,10 +28,7 @@ export default function ProjectCard(props) {
                         className="md:h-72 w-full object-fill object-center"
                         height={600}
                         width={700}
-                        src={
-                          api_url +
-                          item.attributes.Screenshot.data.attributes.url
-                        }
+                        src={item.attributes.Screenshot.data.attributes.url}
                         alt={item.attributes.Name}
                       />
 

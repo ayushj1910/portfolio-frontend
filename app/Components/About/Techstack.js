@@ -1,5 +1,4 @@
 async function getSkillsData() {
-  // const dblink = process.env.DB_LINK;
   const res = await fetch(`${process.env.DB_LINK}/api/skills?populate=*`, {
     cache: "no-store",
   });
