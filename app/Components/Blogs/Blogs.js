@@ -44,7 +44,6 @@ export const Blogs = async () => {
           Checkout all Blogs
         </a>
       </div>
-      {/* <Resouces /> */}
     </div>
   );
 };

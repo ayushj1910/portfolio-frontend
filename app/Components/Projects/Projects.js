@@ -1,8 +1,9 @@
 import ProjectCard from "./ProjectCard";
+import { cache } from "react";
 
 async function getProjectsData() {
   const res = await fetch(`${process.env.DB_LINK}/api/projects?populate=*`, {
-    cache: "no-store",
+    next: { revalidate: 10 },
   });
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -10,7 +11,7 @@ async function getProjectsData() {
 
   return res.json();
 }
-export default async function Projects() {
+export const Projects = async () => {
   const projects = await getProjectsData();
 
   return (
@@ -21,4 +22,4 @@ export default async function Projects() {
       <ProjectCard projects={projects} />
     </div>
   );
-}
+};

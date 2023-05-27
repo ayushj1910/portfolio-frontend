@@ -1,6 +1,6 @@
 async function getSkillsData() {
   const res = await fetch(`${process.env.DB_LINK}/api/skills?populate=*`, {
-    cache: "no-store",
+    next: { revalidate: 10 },
   });
   if (!res.ok) {
     throw new Error("Failed to fetch data");

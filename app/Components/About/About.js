@@ -6,7 +6,6 @@ export async function About(props) {
     <>
       <div id="about" className="sm:pt-[40px] pb-4 md:pt-1 h-auto bg-[#0F172A]">
         <Techstack />
-        {/* bg-[url('/aboutbg.svg')] */}
         <div className="flex md:mx-10 flex-wrap   bg-fixed  sm:flex-row flex-col p-2 m-3 my-10 text-center rounded-md">
           <div className=" bg-red p-2 my-auto sm:w-1/2">
             <div className="inline-flex justify-center bg-black h-[400] text-center rounded-2xl">

@@ -6,7 +6,7 @@ export default function Footer() {
           Copyright © {new Date().getFullYear()}. All rights reserved
         </p>
         <p className="text-center text-gray-500">
-          Coded with ❤️ by{" "}
+          Coded with ❤️ by
           <a className="text-white" href="www.linkedin.com/in/ayushj19">
             Ayush
           </a>
